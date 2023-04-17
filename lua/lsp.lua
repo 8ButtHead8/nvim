@@ -2,7 +2,7 @@ local lspconfigStatus, lspconfig = pcall(require, 'lspconfig')
 local coqStatus, coq = pcall(require, 'coq')
 local lspformatStatus, lspformat = pcall(require, 'lsp-format')
 
-if (not lspconfigStatus or not coqStatus or not lspconfigStatus) then
+if (not lspconfigStatus or not coqStatus or not lspformatStatus) then
 	return
 end
 
@@ -15,4 +15,3 @@ lspconfig.tsserver.setup(coq.lsp_ensure_capabilities({
 	filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
 	on_attach = lspformat.on_attach,
 }))
-
