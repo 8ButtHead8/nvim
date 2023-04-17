@@ -29,7 +29,9 @@ require('lazy').setup({
 			require('lsp')
 		end,
 	},
-
+	{
+		'lukas-reineke/lsp-format.nvim',
+	},
 	{
 		'ms-jpq/coq_nvim',
 		build = ':COQdeps',
@@ -48,26 +50,6 @@ require('lazy').setup({
 		build = ':CHADdeps',
 		branch = 'chad',
 	},
-
-	--[[ {
-		'hrsh7th/nvim-cmp',
-		config = function()
-			require('cmp-config')
-		end
-	},
-	{
-		'hrsh7th/cmp-nvim-lsp',
-	},
-	{
-		'hrsh7th/cmp-buffer',
-	},
-	{
-		'saadparwaiz1/cmp_luasnip',
-	},
-	{
-		'L3MON4D3/LuaSnip',
-		--build = 'make install_jsregexp',
-	}, ]]--
 	{
 		'williamboman/mason.nvim',
 		dependencies = {
@@ -82,6 +64,18 @@ require('lazy').setup({
 		'nvim-treesitter/nvim-treesitter',
 		config = function()
 			require('treesitter')
+		end,
+	},
+	{
+		'windwp/nvim-ts-autotag',
+		config = function ()
+			require('autotag')
+		end
+	},
+	{
+		'numToStr/Comment.nvim',
+		config = function()
+			require('comment')
 		end,
 	},
 	{

@@ -4,4 +4,8 @@ if (not autotagStatus) then
 	return
 end
 
-autotag.setup({})
+autotag.setup({
+	autotag = {
+		enable = true,
+	},
+})
