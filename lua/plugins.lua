@@ -20,6 +20,11 @@ global.coq_settings = {
 			mode = 'long',
 		},
 	},
+	clients = {
+		snippets = {
+			user_path = './snippets/',
+		},
+	},
 }
 
 require('lazy').setup({
@@ -85,4 +90,3 @@ require('lazy').setup({
 		end,
 	},
 })
-

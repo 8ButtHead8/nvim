@@ -1,0 +1,21 @@
+# React Component Snippet
+snippet rcs
+abbr RCS
+	import React from 'react';
+
+	${1|type,interface|} ${2:Props} {
+
+	}
+
+	function ${TM_FILENAME_BASE}({}: ${2:Props}) {
+		
+		return (
+			<${3:div}>
+				$0
+			</${3:div}>
+		);
+
+	}
+
+	export default ${TM_FILENAME_BASE};
+
