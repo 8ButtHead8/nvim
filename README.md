@@ -10,3 +10,5 @@
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [sainnhe/sonokai](https://github.com/sainnhe/sonokai)
+- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
