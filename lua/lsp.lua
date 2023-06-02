@@ -15,3 +15,31 @@ lspconfig.tsserver.setup(coq.lsp_ensure_capabilities({
 	filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
 	on_attach = lspformat.on_attach,
 }))
+
+lspconfig.cssls.setup(coq.lsp_ensure_capabilities({
+	cmd = { "vscode-css-language-server", "--stdio" },
+	filetypes = { "css", "scss", "less" },
+	on_attach = lspformat.on_attach,
+}))
+
+lspconfig.html.setup(coq.lsp_ensure_capabilities({
+	cmd = { "vscode-html-language-server", "--stdio" },
+	filetypes = { "html" },
+	on_attach = lspformat.on_attach,
+}))
+
+local prettier = {
+	formatCommand = 'prettierd ${INPUT}',
+	formatStdin = true,
+}
+
+lspconfig.efm.setup {
+	filetypes = { "css", "scss", "less" },
+	on_attach = lspformat.on_attach,
+	init_options = { documentFormatting = true },
+	settings = {
+		languages = {
+			css = { prettier },
+		},
+	},
+}

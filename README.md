@@ -6,6 +6,7 @@
 - [ms-jpq/coq.thirdparty](https://github.com/ms-jpq/coq.thirdparty)
 - [ms-jpq/chadtree](https://github.com/ms-jpq/chadtree)
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)

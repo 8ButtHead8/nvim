@@ -6,7 +6,7 @@ end
 
 ts.setup({
 	ensure_installed = {
-		'javascript', 'lua', 'tsx', 'typescript'
+		'javascript', 'lua', 'tsx', 'typescript', 'css', 'scss', 'html'
 	},
 	auto_install = true,
 	highlight = {

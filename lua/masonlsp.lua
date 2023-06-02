@@ -11,6 +11,9 @@ masonLSP.setup({
 	ensure_installed = {
 		'tsserver',
 		'lua_ls',
+		'cssls',
+		'html',
+		'efm',
 	},
 	automatic_installation = true
 })
