@@ -40,6 +40,7 @@ lspconfig.efm.setup {
 	settings = {
 		languages = {
 			css = { prettier },
+			scss = { prettier },
 		},
 	},
 }
