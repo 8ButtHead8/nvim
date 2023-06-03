@@ -11,9 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local global = vim.g
-
-global.coq_settings = {
+vim.api.nvim_set_var("coq_settings", {
 	auto_start = 'shut-up',
 	display = {
 		icons = {
@@ -25,7 +23,16 @@ global.coq_settings = {
 			user_path = './snippets/',
 		},
 	},
-}
+})
+
+vim.api.nvim_set_var("chadtree_settings", {
+	options = {
+		show_hidden = true,
+	},
+	view = {
+		width = 36,
+	}
+})
 
 require('lazy').setup({
 	{
@@ -54,6 +61,9 @@ require('lazy').setup({
 		'ms-jpq/chadtree',
 		build = ':CHADdeps',
 		branch = 'chad',
+		config = function()
+			vim.cmd(':CHADopen')
+		end
 	},
 	{
 		'williamboman/mason.nvim',

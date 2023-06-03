@@ -1,6 +1,4 @@
-local global = vim.g
-
-global.sonokai_style = 'andromeda'
-global.sonokai_better_performance = 1
+vim.api.nvim_set_var("sonokai_style", 'andromeda')
+vim.api.nvim_set_var("sonokai_better_performance", 1)
 
 vim.cmd('colorscheme sonokai')
