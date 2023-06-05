@@ -6,7 +6,17 @@ end
 
 ts.setup({
 	ensure_installed = {
-		'javascript', 'lua', 'tsx', 'typescript', 'css', 'scss', 'html'
+		'javascript',
+		'lua',
+		'tsx',
+		'typescript',
+		'css',
+		'scss',
+		'html',
+		'go',
+		'gomod',
+		'gosum',
+		'gowork',
 	},
 	auto_install = true,
 	highlight = {

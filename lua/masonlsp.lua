@@ -14,6 +14,7 @@ masonLSP.setup({
 		'cssls',
 		'html',
 		'efm',
+		'gopls',
 	},
 	automatic_installation = true
 })

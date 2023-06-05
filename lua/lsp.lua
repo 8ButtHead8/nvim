@@ -44,3 +44,9 @@ lspconfig.efm.setup {
 		},
 	},
 }
+
+lspconfig.gopls.setup(coq.lsp_ensure_capabilities({
+	cmd = { "gopls" },
+	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+	on_attach = lspformat.on_attach,
+}))
