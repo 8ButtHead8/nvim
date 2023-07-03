@@ -34,13 +34,14 @@ local prettier = {
 }
 
 lspconfig.efm.setup {
-	filetypes = { "css", "scss", "less" },
+	filetypes = { "css", "scss", "less", "jsonc" },
 	on_attach = lspformat.on_attach,
 	init_options = { documentFormatting = true },
 	settings = {
 		languages = {
 			css = { prettier },
 			scss = { prettier },
+			jsonc = { prettier },
 		},
 	},
 }

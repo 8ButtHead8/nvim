@@ -61,9 +61,6 @@ require('lazy').setup({
 		'ms-jpq/chadtree',
 		build = ':CHADdeps',
 		branch = 'chad',
-		config = function()
-			vim.cmd(':CHADopen')
-		end
 	},
 	{
 		'williamboman/mason.nvim',
