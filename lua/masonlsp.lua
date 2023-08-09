@@ -15,6 +15,7 @@ masonLSP.setup({
 		'html',
 		'efm',
 		'gopls',
+		'pyright',
 	},
 	automatic_installation = true
 })

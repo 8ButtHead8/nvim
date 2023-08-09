@@ -52,3 +52,7 @@ lspconfig.gopls.setup(coq.lsp_ensure_capabilities({
 	filetypes = { "go", "gomod", "gowork", "gotmpl" },
 	on_attach = lspformat.on_attach,
 }))
+
+lspconfig.pyright.setup(coq.lsp_ensure_capabilities({
+	on_attach = lspformat.on_attach,
+}))
