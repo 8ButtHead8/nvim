@@ -2,6 +2,7 @@ local opt = vim.opt
 
 vim.scriptencoding = 'utf-8'
 
+opt.mouse = ""
 opt.encoding = 'utf-8'
 opt.fileencoding = 'unf-8'
 
@@ -33,3 +34,16 @@ opt.termguicolors = true
 opt.wildoptions = 'pum'
 opt.pumblend = 5
 opt.background = 'dark'
+
+opt.showmatch = true
+opt.list = true
+opt.listchars = {
+	-- extends = '»',
+	-- precedes = '«',
+	trail = '•',
+	-- lead = '•',
+	-- space = ' ',
+	-- tab = '  ',
+	-- nbsp = '×',
+	-- eol = '↴'
+}

@@ -105,4 +105,10 @@ require('lazy').setup({
 			require('colorscheme')
 		end,
 	},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		config = function()
+			require('blankline')
+		end,
+	},
 })
