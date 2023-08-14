@@ -13,3 +13,4 @@
 - [sainnhe/sonokai](https://github.com/sainnhe/sonokai)
 - [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
