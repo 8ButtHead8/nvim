@@ -16,6 +16,7 @@ masonLSP.setup({
 		'efm',
 		'gopls',
 		'pyright',
+		'intelephense',
 	},
 	automatic_installation = true
 })
