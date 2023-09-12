@@ -52,8 +52,11 @@ lspconfig.gopls.setup(coq.lsp_ensure_capabilities({
 	on_attach = lspformat.on_attach,
 }))
 
-lspconfig.pyright.setup(coq.lsp_ensure_capabilities({}))
+lspconfig.pyright.setup(coq.lsp_ensure_capabilities({
+	filetypes = { "python" },
+}))
 
 lspconfig.intelephense.setup(coq.lsp_ensure_capabilities({
+	filetypes = { "php" },
 	on_attach = lspformat.on_attach,
 }))

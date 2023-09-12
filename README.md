@@ -14,3 +14,4 @@
 - [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [toppair/peek.nvim](https://github.com/8ButtHead8/peek.nvim)

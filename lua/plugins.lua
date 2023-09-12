@@ -111,4 +111,11 @@ require('lazy').setup({
 			require('blankline')
 		end,
 	},
+	{
+		"8ButtHead8/peek.nvim",
+		build = 'deno task --quiet build:fast',
+		config = function()
+			require('mdpreview')
+		end,
+	},
 })
