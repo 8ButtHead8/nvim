@@ -1,35 +1,39 @@
-local blanklineStatus, blankline = pcall(require, 'indent_blankline')
+local blanklineStatus, blankline = pcall(require, 'ibl')
 
 if (not blanklineStatus) then
 	return
 end
 
-vim.cmd('highlight IndentBlanklineIndent1 guifg=#E5C07B gui=nocombine')
-vim.cmd('highlight IndentBlanklineIndent2 guifg=#98C379 gui=nocombine')
-vim.cmd('highlight IndentBlanklineIndent2 guifg=#56B6C2 gui=nocombine')
+local hooks = require('ibl.hooks')
+
+hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
+	vim.api.nvim_set_hl(0, 'IndentBlanklineIndent1', { fg = "#E5C07B" })
+	vim.api.nvim_set_hl(0, 'IndentBlanklineIndent2', { fg = "#98C379" })
+	vim.api.nvim_set_hl(0, 'IndentBlanklineIndent3', { fg = "#56B6C2" })
+end)
 
 blankline.setup({
-	show_end_of_line = true,
-	space_char_blankline = " ",
-	show_current_context = true,
-	show_current_context_start = true,
-	show_trailing_blankline_indent = false,
-	use_treesitter = true,
-
-	char_list = { '│' },
-
-	filetype_exclude = {
-		"CHADthee",
+	enabled = true,
+	indent = {
+		smart_indent_cap = true,
+		char = "│",
+		tab_char = '│',
+		highlight = {
+			"IndentBlanklineIndent1",
+			"IndentBlanklineIndent2",
+			"IndentBlanklineIndent3",
+		},
 	},
-
-	buftype_exclude = {
-		'terminal',
-		'nofile',
+	scope = {
+		enabled = true,
 	},
-
-	char_highlight_list = {
-		"IndentBlanklineIndent1",
-		"IndentBlanklineIndent2",
-		"IndentBlanklineIndent3",
+	exclude = {
+		filetypes = {
+			"CHADthee",
+		},
+		buftypes = {
+			'terminal',
+			'nofile',
+		},
 	},
 })
