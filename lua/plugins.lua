@@ -119,4 +119,13 @@ require('lazy').setup({
 			require('mdpreview')
 		end,
 	},
+	{
+		"gelguy/wilder.nvim",
+		dependencies = {
+			'romgrk/fzy-lua-native',
+		},
+		config = function()
+			require('cmdline')
+		end,
+	},
 })
