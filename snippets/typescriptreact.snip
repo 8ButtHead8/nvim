@@ -19,3 +19,21 @@ abbr RCS
 
 	export default ${TM_FILENAME_BASE};
 
+# ReactNative Component Snippet
+snippet rncs
+abbr RNCS
+	import React from 'react';
+	import { View } from 'react-native';
+
+	function ${TM_FILENAME_BASE}() {
+
+		return (
+			<${1:View}>
+				$0
+			</${1:View}>
+		);
+
+	}
+
+	export default ${TM_FILENAME_BASE};
+
