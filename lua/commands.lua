@@ -14,12 +14,12 @@ function setSCSSCommand(sourceMap)
 	vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 		group = scss_autocomplete_group,
 		pattern = { "*.scss" },
-		command = "!sass " ..
+		command = "silent !sass " ..
 				(sourceMap and "--source-map " or "--no-source-map ") .. "--style=compressed %:p %:s?_??:r.css",
 	})
 	vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 		group = scss_autocomplete_group,
 		pattern = { "*.scss" },
-		command = "!postcss %:r.css --use autoprefixer -o %:r.css",
+		command = "silent !postcss %:r.css --use autoprefixer -o %:r.css",
 	})
 end
