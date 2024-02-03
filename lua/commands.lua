@@ -9,6 +9,10 @@ vim.api.nvim_create_user_command('ScssNosource', function()
 	setSCSSCommand(false)
 end, {})
 
+vim.api.nvim_create_user_command('ScssDis', function()
+	vim.api.nvim_create_augroup('scss_autocomplete', { clear = true })
+end, {})
+
 function setSCSSCommand(sourceMap)
 	local scss_autocomplete_group = vim.api.nvim_create_augroup('scss_autocomplete', { clear = true })
 	vim.api.nvim_create_autocmd({ "BufWritePost" }, {
@@ -19,7 +23,8 @@ function setSCSSCommand(sourceMap)
 	})
 	vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 		group = scss_autocomplete_group,
-		pattern = { "*.css" },
-		command = "silent !postcss %:r.css --use autoprefixer -o %:r.css",
+		-- pattern = { "*.css" },
+		pattern = { "_*.scss" },
+		command = "silent !postcss %:s?_??:r.css --use autoprefixer -o %:s?_??:r.css",
 	})
 end
