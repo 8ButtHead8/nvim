@@ -75,6 +75,7 @@ require('lazy').setup({
 	{
 		'nvim-treesitter/nvim-treesitter',
 		config = function()
+			require('tsblade')
 			require('treesitter')
 		end,
 	},

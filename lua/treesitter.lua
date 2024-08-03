@@ -17,6 +17,10 @@ ts.setup({
 		'gomod',
 		'gosum',
 		'gowork',
+		'php',
+		'php_only',
+		'blade',
+		'bash',
 	},
 	auto_install = true,
 	highlight = {
