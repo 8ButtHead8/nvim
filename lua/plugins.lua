@@ -70,7 +70,6 @@ require('lazy').setup({
 	},
 	{
 		'williamboman/mason.nvim',
-		cmd = "Mason", -- загружать при вызове команды Mason
 		dependencies = {
 			'williamboman/mason-lspconfig.nvim',
 		},
