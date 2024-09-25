@@ -15,5 +15,9 @@
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim)
+- [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
+- [giusgad/pets.nvim](https://github.com/giusgad/pets.nvim)
 ## Forked:
 - [toppair/peek.nvim](https://github.com/8ButtHead8/peek.nvim)
+## Scheme:
+- [sainnhe/sonokai](https://github.com/sainnhe/sonokai)
