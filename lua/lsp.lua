@@ -10,7 +10,7 @@ lspconfig.lua_ls.setup(coq.lsp_ensure_capabilities({
 	on_attach = lspformat.on_attach,
 }))
 
-lspconfig.tsserver.setup(coq.lsp_ensure_capabilities({
+lspconfig.ts_ls.setup(coq.lsp_ensure_capabilities({
 	cmd = { "typescript-language-server", "--stdio" },
 	filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
 	on_attach = lspformat.on_attach,

@@ -9,7 +9,7 @@ end
 mason.setup()
 masonLSP.setup({
 	ensure_installed = {
-		'tsserver',
+		'ts_ls',
 		'lua_ls',
 		'cssls',
 		'html',
