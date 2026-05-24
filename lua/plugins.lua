@@ -126,14 +126,14 @@ require('lazy').setup({
 			require('blankline')
 		end,
 	},
-	{
+	--[[ {
 		"8ButtHead8/peek.nvim",
 		cmd = "PeekOpen", -- загружать при вызове команды PeekOpen
 		build = 'deno task --quiet build:fast',
 		config = function()
 			require('mdpreview')
 		end,
-	},
+	}, ]]
 	{
 		"gelguy/wilder.nvim",
 		event = "CmdlineEnter", -- загружать при входе в командную строку

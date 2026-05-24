@@ -1,7 +1,7 @@
-local peekStatus, peek = pcall(require, 'peek')
+--[[ local peekStatus, peek = pcall(require, 'peek')
 
 if (not peekStatus) then
 	return
 end
 
-peek.setup()
+peek.setup() ]]
